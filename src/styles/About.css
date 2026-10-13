@@ -1,0 +1,130 @@
+.about-page {
+  padding-top: 5rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.about-main-image {
+  height: 600px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  background: var(--bg-darker);
+}
+
+.about-main-image img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.about-text-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-text-content p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Values */
+.values-section {
+  background: var(--bg-darker);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  text-align: center;
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.value-item p {
+  color: var(--text-muted);
+}
+
+/* Mission/Vision Card */
+.mission-vision {
+  padding: 10rem 0;
+}
+
+.mv-card {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(10, 10, 10, 0.5) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 4rem;
+  display: flex;
+  align-items: stretch;
+  gap: 4rem;
+}
+
+.mv-item {
+  flex: 1;
+}
+
+.mv-item h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mv-item p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.mv-divider {
+  width: 1px;
+  background: var(--border-color);
+}
+
+@media (max-width: 992px) {
+  .mv-card {
+    flex-direction: column;
+  }
+  
+  .mv-divider {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-main-image {
+    height: auto;
+    width: 100%;
+  }
+
+  .about-main-image img {
+    height: auto;
+    width: 100%;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
