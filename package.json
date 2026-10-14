@@ -2,6 +2,7 @@
   "name": "innuka-website",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://teamgriwd-del.github.io/innuka",
   "dependencies": {
     "framer-motion": "^10.12.16",
     "lucide-react": "^0.244.0",
